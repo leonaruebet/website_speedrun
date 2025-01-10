@@ -10,3 +10,25 @@
 body {
   @apply antialiased text-gray-800;
 }
+
+/* Social Navigation Tooltips */
+.social-nav-item {
+  @apply relative;
+}
+
+.social-tooltip {
+  @apply absolute right-full mr-4 bg-white px-3 py-1 rounded shadow-lg
+  text-primary-600 font-medium opacity-0 invisible -translate-x-2
+  group-hover:opacity-100 group-hover:visible group-hover:translate-x-0
+  transition-all duration-300 whitespace-nowrap;
+}
+
+/* Smooth Scroll Behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Gradient Text */
+.gradient-text {
+  @apply bg-gradient-to-r from-primary-500 to-primary-700 text-transparent bg-clip-text;
+}
